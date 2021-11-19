@@ -22,6 +22,7 @@ self.addEventListener("install", function(evt) {
     )
 });
 
+// Replace outdated cache with new cache
 self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
